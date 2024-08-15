@@ -1,0 +1,7 @@
+{
+  "name": "AppProcesoTextil",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
