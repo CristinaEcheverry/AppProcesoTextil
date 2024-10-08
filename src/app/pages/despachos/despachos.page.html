@@ -1,0 +1,67 @@
+<ion-header class="ionic">
+  <ion-toolbar color="primary">
+       <div class="border_menuopc">Despachos</div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-item>
+    <ion-input label="Número Despacho" label-placement="floating"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Número Pedido" label-placement="floating" ></ion-input>
+  </ion-item> 
+
+  <ion-item>
+    <ion-input label="Tipo Identificación" label-placement="floating"></ion-input>
+  </ion-item> 
+
+  <ion-item>
+    <ion-input label="Número Identificación" label-placement="floating" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Razón Social" label-placement="floating" ></ion-input>
+  </ion-item> 
+
+  <ion-item>
+    <ion-input label="Dirección" label-placement="floating"></ion-input>
+  </ion-item> 
+
+  <ion-item>
+    <ion-input label="Teléfono" label-placement="floating"></ion-input>
+  </ion-item> 
+
+  <ion-item>
+    <ion-input label="Correo Electrónico" label-placement="floating"></ion-input>
+  </ion-item> 
+
+  <ion-item>
+    <ion-select label="Estado Pedido" >
+      <ion-select-option value="Registrado">Registrado</ion-select-option>
+    </ion-select>
+  </ion-item> 
+
+  <ion-item>
+    <ion-input label="Observaciones" label-placement="floating"></ion-input>
+  </ion-item> 
+
+  <ion-item>
+    <ion-select label="Estado Despacho" >
+      <ion-select-option value="Empacado">Empacado</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Fecha Despacho" label-placement="floating" ></ion-input>
+  </ion-item>
+  
+  <ion-button routerLink="inicio" expand="block" mode='android' class="submit" type="submit" >
+    Guardar
+    <ion-icon slot="end" name="log-in-outline"></ion-icon>
+    </ion-button>
+  
+
+</ion-content>

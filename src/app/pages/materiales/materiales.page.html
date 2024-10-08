@@ -1,0 +1,46 @@
+<ion-header class="ionic">
+  <ion-toolbar color="primary">
+      <div class="border_menuopc">Materiales
+  </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-item>
+    <ion-input label="Codigo" label-placement="floating" ></ion-input>
+  </ion-item> 
+
+  <ion-item>
+    <ion-input label="Material" label-placement="floating" ></ion-input>
+  </ion-item> 
+
+  <ion-item>
+    <ion-input label="Texutra" label-placement="floating" ></ion-input>
+  </ion-item> 
+
+  <ion-item>
+    <ion-input label="Reseña" label-placement="floating" ></ion-input>
+  </ion-item> 
+
+  <ion-item>
+    <ion-input label="Cantidad" label-placement="floating" ></ion-input>
+  </ion-item> 
+
+  <ion-item>
+    <ion-input label="Color" label-placement="floating" ></ion-input>
+  </ion-item> 
+
+  <ion-item>
+    <ion-select label="Estado" >
+      <ion-select-option value="Activo">Activo</ion-select-option>
+      <ion-select-option value="inactivo">Inactivo</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-button routerLink="inicio" expand="block" mode='android' class="submit" type="submit" >
+    Guardar
+    <ion-icon slot="end" name="log-in-outline"></ion-icon>
+    </ion-button>
+
+</ion-content>

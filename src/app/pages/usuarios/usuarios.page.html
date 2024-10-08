@@ -1,0 +1,38 @@
+<ion-header class="ionic">
+  <ion-toolbar color="primary">
+    <div class="border_menuopc">Usuarios</div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<ion-list>
+  <ion-item>
+    <ion-input label="Usuario" label-placement="floating" type="text"  [(ngModel)]="Usuario"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Contraseña" label-placement="floating" type="text" [(ngModel)]="Contrasena" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-select label="Rol" [(ngModel)]="Rol">
+      <ion-select-option value="Comercial">Comercial</ion-select-option>
+      <ion-select-option value="Facturacion">Facturacion</ion-select-option>
+    </ion-select>
+  </ion-item> 
+
+  <ion-item>
+    <ion-select label="Estado" [(ngModel)]="Estado">
+      <ion-select-option value="Activo">Activo</ion-select-option>
+      <ion-select-option value="inactivo">Inactivo</ion-select-option>
+    </ion-select>      
+  </ion-item> 
+
+</ion-list>
+
+<ion-button routerLink="inicio" expand="block" mode='android' class="submit" type="submit" (click)="usuario()" >
+  Guardar
+  <ion-icon slot="end" name="log-in-outline"></ion-icon>
+  </ion-button>
+</ion-content>
+

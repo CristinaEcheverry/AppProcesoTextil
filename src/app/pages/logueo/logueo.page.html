@@ -1,0 +1,18 @@
+<app-header title="Proceso Textil"></app-header>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-input label="Usuario" label-placement="floating" type="text"  [(ngModel)]="Usuario"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input label="Contraseña" label-placement="floating" type="text" [(ngModel)]="Contrasena" ></ion-input>
+    </ion-item>
+  </ion-list>
+
+<ion-button routerLink="inicio" expand="block" mode='android' class="submit" type="submit" (click)="logueo()" >
+Ingresar
+<ion-icon slot="end" name="log-in-outline"></ion-icon>
+</ion-button>
+
+</ion-content>

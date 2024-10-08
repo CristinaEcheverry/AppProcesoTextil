@@ -1,0 +1,51 @@
+<ion-header class="ionic">
+  <ion-toolbar color="primary">
+       <div class="border_menuopc">Menú</div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <div class="d-button-inicio-center">
+
+    <ion-button style= "width: 200px; height: 50px; font-size: 20px" mode='android' class="submit" type="submit" color="primary" routerLink="/pedido">
+      Pedido 
+      <ion-icon slot="end" name="file-tray-full-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+  <div class="d-flex-center">
+    <ion-button style= "width: 200px; height: 50px; font-size: 20px"  mode='android' class="margen-button" type="submit" color="primary" routerLink="/materiales">
+      Materiales 
+      <ion-icon slot="end" name="logo-stackoverflow"></ion-icon>
+    </ion-button>
+  </div>
+
+<div class="d-flex-center">
+    <ion-button style= "width: 200px; height: 50px; font-size: 20px"  mode='android' class="margen-button" type="submit" color="primary" routerLink="/clientes">
+      Clientes 
+      <ion-icon slot="end" name="people-circle-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+    <div class="d-flex-center">
+    <ion-button style= "width: 200px; height: 50px; font-size: 20px" mode='android' class="margen-button" type="submit" color="primary" routerLink="/despachos">
+      Despachos 
+      <ion-icon slot="end" name="calendar-number-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+    <div class="d-flex-center">
+    <ion-button  style= "width: 200px; height: 50px; font-size: 20px" mode='android' class="margen-button" type="submit" color="primary" routerLink="/usuarios">
+      Usuarios 
+      <ion-icon slot="end" name="finger-print-outline"></ion-icon>
+    </ion-button>
+  </div>
+ 
+  <div class="d-flex-center">
+    <ion-button   style= "width: 200px; height: 50px; font-size: 20px" mode='android' class="margen-button" type="submit" color="primary"routerLink="/logueo">
+      Cerrar Sesion 
+      <ion-icon slot="end" name="exit-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+</ion-content>
